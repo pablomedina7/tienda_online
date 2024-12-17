@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Tienda de Pingüinos
+  body
+    h1 Bienvenido a la Tienda Online
+    ul
+      each product in products
+        li
+          h2= product.name
+          p Precio: #{product.price} USD
+          p Descripción: #{product.description}
+    a(href="/admin") Acceso Administrador
